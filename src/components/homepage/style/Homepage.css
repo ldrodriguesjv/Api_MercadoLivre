@@ -1,0 +1,189 @@
+:root {
+  background-color: white;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto Slab", serif;
+}
+
+label {
+  margin: 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background-color: yellow;
+}
+
+footer{
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: left;
+  background-color: yellow;
+  font-family: "Roboto Slab", serif;
+}
+
+.divHeader {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens horizontalmente */
+  align-items: center; /* Alinha os itens verticalmente */
+}
+
+.divLogo {
+  display: flex;
+  align-items: center; /* Alinhar itens verticalmente */
+}
+
+.nomeSite {
+  font-family: "Shadows Into Light Two", cursive;
+  margin-left: 1rem; /* Adicionar margem à esquerda para separar o texto da logo */
+}
+.logoMarca{
+  width: 10%; /* Define a largura da imagem como 100% do tamanho do contêiner pai */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 100px; /* Bordas arredondadas */
+}
+.botaoAjuste {
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 12.5rem;
+  align-items: center;
+}
+
+/* src/components/homepage/style/Homepage.css */
+.carrinho-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  position: static;
+  right: 20px;
+  top: 20px;
+  margin-left: 0.5rem; /* Adiciona espaço à esquerda do carrinho de compras */
+}
+
+.carrinho-icone {
+  font-size: 24px;
+}
+
+.carrinho-contagem {
+  background-color: red;
+  color: white;
+  border-radius: 100%;
+  padding: 4px 11px;
+  margin-left: 5px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardItem {
+  width: calc(33% - 10px);
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 768px) {
+  li {
+      width: calc(50% - 20px);
+  }
+  .cardItem{width: calc(50%-20px);}
+}
+
+@media screen and (max-width: 480px) {
+  li {
+      width: calc(100% - 20px);
+  }
+  .cardItem {
+    width: calc(100% - 20px);
+  }
+}
+
+.divPesquisa {
+  /* Estilo para a barra de pesquisa */
+  text-align: center;
+}
+.divPesquisa1 {
+  /* Estilo para a barra de pesquisa */
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+li {
+  
+  width: calc(20% - 20px);
+  margin: 0 5px 10px;
+  flex: 1 0 30%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cardProduto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+li img {
+  width: 100%; /* Define a largura da imagem como 100% do tamanho do contêiner pai */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+  object-fit: cover; /* Garante que a imagem cubra completamente o contêiner sem distorção */
+  margin-bottom: 1rem; /* Adiciona espaçamento inferior */
+}
+.tituloProduto{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.vlrProduto{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.tituloProduto,
+.cardProduto p,
+.cardProduto a,
+.cardProduto button {
+  margin: 0.5rem 0; /* Adiciona um pouco de espaçamento entre os elementos */
+}
+
+.linkSocial{
+  display: flex;
+  flex-direction: row;
+}
+.git{
+  margin-right: 5px;
+}
+.linkdin{
+  margin-right: 5px;
+}
+.email{
+  margin-right: 5px;
+}
+.divOrdenacao{
+  display: flex;
+  justify-content: center; /* Distribui os itens horizontalmente */
+  align-items: center; /* Alinha os itens verticalmente */
+}

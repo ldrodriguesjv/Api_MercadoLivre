@@ -1,0 +1,96 @@
+/* src/components/oferta/style/Ofertas.css */
+
+.ofertas-grid {
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os cards quebrem para a próxima linha */
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal se os cards não couberem na tela */
+  }
+  
+  .card {
+    flex: 1 0 calc(15% - 10px); /* Reduz a largura dos cards e adiciona espaço entre eles */
+    margin-right: 10px; /* Adiciona espaço entre os cards */
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    position: relative; /* Permite posicionar os botões relativamente ao card */
+    
+}
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    align-items: center;
+}
+  
+  .card h4 {
+    font-size: 18px;
+    margin: 10px 0;
+    white-space: nowrap; /* Impede a quebra de linha */
+    overflow: hidden; /* Oculta o texto que excede a largura do elemento */
+    text-overflow: ellipsis; /* Adiciona "..." para indicar que há mais texto */
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .card a:hover {
+    background-color: #0056b3;
+  }
+  
+  .card .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card .nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .card .nav-button.left {
+    left: 10px;
+  }
+  
+  .card .nav-button.right {
+    right: 10px;
+  }
+  
+  .btnAddCarrinho{
+    margin: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    
+    
+  }
+
+  .botaoAjuste {
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 12.5rem;
+    align-items: center;
+  }
